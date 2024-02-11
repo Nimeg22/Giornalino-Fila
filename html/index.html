@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/width-under-1150px.css">
+
+    <title>Tuttofila - Homepage</title>
+  </head>
+  <body>
+    <header>
+      <div>
+      <button class="hamburger-menu">
+        <img src="../images/hamburger-menu.png">
+        <img class="logo-scuola" src="../images/logo.png">
+      </button>
+      <div class="logo-tutto-fila">
+        <img src="../images/tutto-fila.png">
+      </div>
+      </div>
+      <div class="links">
+        <a class="link" href="index.html">
+          <div>
+            <img src="../images/house-icon.png">
+          </div>
+          <label>HOME</label>
+        </a>
+        <a class="link" href="archive.html">
+          <div>
+            <img src="../images/archive-icon.png">
+          </div>
+          <label>ARCHIVIO</label>
+        </a>
+        <a class="link" href="about.html">
+          <div>
+            <img src="../images/redaction-icon.png">
+          </div>
+          <label>REDAZIONE</label>
+        </a>
+        <a class="link" href="write.html">
+          <div>
+            <img src="../images/write-icon.png">
+          </div>
+          <label>SCRIVI TU</label>
+        </a>
+      </div>
+      <div class="search-bar">
+        <img src="../images/search-icon.png">
+        <input type="text">
+      </div>
+    </header>
+
+    <div class="sidebar">
+      <div class="links">
+        <a class="link" href="index.html">
+          <div>
+            <img src="../images/house-icon.png">
+          </div>
+          <label>HOME</label>
+        </a>
+        <a class="link" href="archive.html">
+          <div>
+            <img src="../images/archive-icon.png">
+          </div>
+          <label>ARCHIVIO</label>
+        </a>
+        <a class="link" href="about.html">
+          <div>
+            <img src="../images/redaction-icon.png">
+          </div>
+          <label>REDAZIONE</label>
+        </a>
+        <a class="link" href="write.html">
+          <div>
+            <img src="../images/write-icon.png">
+          </div>
+          <label>SCRIVI TU</label>
+        </a>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <button class="screen-darkener"></button>
+
+    <main>
+      <div class="container flex-center">
+        <div class="content">
+          <label class="title">
+            ARTICOLI
+          </label>
+          <div class="feed">
+            <div class="feed-highlights">
+              <a class="article flex-center">
+                <img class="article-img" src="../images/ARTICOLO1.png">
+                <div class="article-info">
+                  <label class="article-title">ARTICOLO 1</label>
+                  <label class="article-description">Bla bla bla bla bla bello sto articolo
+                  </label>
+                </div>
+                <div class="tablist-container">
+                  <button class="scrollbutton back" onclick="skip(-1)">
+                    <img src="../images/arrow-icon.png">
+                  </button>
+                  <div class="tablist">
+                    <div class="cursor">
+                      <div></div>
+                    </div>
+                    <div class="tab">
+                    </div>
+                    <div class="tab">
+                    </div>
+                    <div class="tab">
+                    </div>
+                    <div class="tab">
+                    </div>
+                    <div class="tab">
+                    </div>
+                    <div class="tab">
+                    </div>
+                    <div class="tab">
+                    </div>
+                    <div class="tab">
+                    </div>
+                    <div class="tab">
+                    </div>
+                    <div class="tab">
+                    </div>
+                  </div>
+                  <button class="scrollbutton skip" onclick="skip(1)">
+                    <img src="../images/arrow-icon.png">
+                  </button>
+                </div>
+              </a>
+            </div>
+            <div class="feed-related">
+              <a class="article flex-center">
+                <img class="article-img" src="../images/ARTICOLO2.png">
+                <div class="article-info">
+                  <label class="article-title">.........</label>
+                  <label class="article-description">Bla bla bla bla bla bello sto articolo
+                  </label>
+                </div>
+              </a>
+              <a class="article flex-center">
+                <img class="article-img" src="../images/ARTICOLO3.png">
+                <div class="article-info">
+                  <label class="article-title">.........</label>
+                  <label class="article-description">Bla bla bla bla bla bello sto articolo che parla di un sacco di cose inuutili e bla bla bla bla bla
+                  </label>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      
+    </footer>
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/highlights.js"></script>
+  </body>
+</html>

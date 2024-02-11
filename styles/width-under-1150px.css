@@ -1,0 +1,22 @@
+@media (max-width: 1150px) {
+  .screen-darkener.sidebar-visible {
+    left: 330px;
+    right: 0;
+  }
+  .spacer {
+    display: none;
+  }
+  header .links {
+    display: none;
+  }
+  .sidebar .links {
+    display: block;
+    width: 100%;
+  }
+  .sidebar img, .sidebar label {
+    opacity: 0;
+  }
+  .sidebar.sidebar-visible img, .sidebar.sidebar-visible label {
+    opacity: 1;
+  }
+}

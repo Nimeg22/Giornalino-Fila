@@ -1,0 +1,164 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  border-width: 1px, solid, black;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 200;
+}
+
+header div {
+  display: flex;
+  height: 100%;
+}
+
+.hamburger-menu {
+  height: 100%;
+  width: 130px;
+  margin-left: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburger-menu img {
+  height: 60%;
+  transition: transform 1s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.hamburger-menu img.sidebar-visible {
+  transform: rotate(-360deg);
+}
+
+.logo-tutto-fila {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  padding: 0 2vw;
+}
+
+.logo-tutto-fila img {
+  height: 75%;
+}
+
+header .links {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+header .link {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 5px 0;
+}
+
+header .link div {
+  height: 100%;
+  transition: height 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+header .link div * {
+  flex: 1;
+}
+
+header .link div img {
+  height: 70%;
+  transition: height 0.5s;
+}
+
+header .link label {
+  color: transparent;
+  transition: height 0.5s, display 0.5s, color 0.5s ease-in;
+  font-size: 0;
+  padding: 0;
+}
+
+header .link:hover {
+  background-color: aliceblue;
+}
+
+header .link:hover div {
+  height: 70%;
+}
+
+header .link:hover div img {
+  height: 90%;
+}
+
+header .link:hover label {
+  flex: 1;
+  align-items: center;
+  color: black;
+  display: block;
+  height: auto;
+  font-size: 0.8em;
+}
+
+.search-bar {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.search-bar img {
+  height: 60%;
+  transition: transform 1s ease-in-out;
+}
+
+.search-bar input[type="text"] {
+  box-sizing: border-box;
+  padding: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid black;
+  width: 0;
+  background-color: lightgray;
+  transition: width 0.5s, margin-left 0.5s;
+  height: 2rem;
+}
+
+.search-bar input[type="text"]:focus {
+  outline: none;
+}
+
+.search-bar:hover {
+  background-color: aliceblue;
+}
+
+.search-bar:hover img {
+  transform: rotate(360deg);
+}
+
+.search-bar:hover input {
+  background-color: aliceblue;
+  margin-left: 15px;
+  width: 150px;
+}

@@ -1,0 +1,60 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+}
+  
+.login-container {
+width: 400px;
+height: auto;
+margin: auto auto;
+padding: 40px;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+text-align:center;
+}
+
+.login-container h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.login-container select,
+.login-container input[type="password"] {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+text-align:center;
+}
+
+.login-container input[type="submit"] {
+width: 100%;
+padding: 10px;
+background-color: #4caf50;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 16px;
+text-align:center;
+}
+
+.login-container input[type="submit"]:hover {
+background-color: #45a049;
+}
+
+.login-container .message {
+text-align: center;
+margin-top: 10px;
+}
+
+.login-container .message a {
+color: #4caf50;
+}
+
+.error{
+color: red;
+}

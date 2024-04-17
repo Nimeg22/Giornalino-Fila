@@ -1,167 +1,170 @@
 <!DOCTYPE html>
 <html lang="it">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../styles/general.css">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/sidebar.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="../styles/width-under-1150px.css">
+      <link rel="stylesheet" href="../styles/general.css">
+      <link rel="stylesheet" href="../styles/header.css">
+      <link rel="stylesheet" href="../styles/sidebar.css">
+      <link rel="stylesheet" href="../styles/main.css">
 
-    <title>Tuttofila - Homepage</title>
+      <title>Tuttofila - Homepage </title>
   </head>
   <body>
+
     <header>
       <div>
-      <button class="hamburger-menu">
-        <img src="../images/hamburger-menu.png">
-        <img class="logo-scuola" src="../images/logo.png">
-      </button>
-      <div class="logo-tutto-fila">
-        <img src="../images/tutto-fila.png">
+        <button class="open-sidebar-btn">
+          <img class="hamburger-menu" src="../images/hamburger-menu.png">
+          <img class="logo-scuola" src="../images/logo.png">
+        </button>
+
+        <div class="logo-tutto-fila flex-center">
+          <img src="../images/tutto-fila.png">
+        </div>
       </div>
-      </div>
-      <div class="links">
-        <a class="link" href="index.html">
+
+      <div class="pages">
+        <a class="page-link" href="index.html">
           <div>
             <img src="../images/house-icon.png">
           </div>
           <label>HOME</label>
         </a>
-        <a class="link" href="archive.html">
+        <a class="page-link" href="archive.html">
           <div>
             <img src="../images/archive-icon.png">
           </div>
-          <label>ARCHIVIO</label>
+          <label>ARCHIVIO</label>          
         </a>
-        <a class="link" href="about.html">
+        <a class="page-link" href="about.html">
           <div>
             <img src="../images/redaction-icon.png">
           </div>
-          <label>REDAZIONE</label>
+          <label>REDAZIONE</label>          
         </a>
         <a class="link" href="write.php">
           <div>
             <img src="../images/write-icon.png">
           </div>
-          <label>SCRIVI TU</label>
+          <label>SCRIVI TU</label>          
         </a>
       </div>
+
       <div class="search-bar">
-        <img src="../images/search-icon.png">
-        <input type="text">
+        <input class="mobile-search-input" type="text">
+        <div><img src="../images/search-icon.png"></div>
+        <input class="pc-search-input" type="text">
       </div>
     </header>
 
+    <button class="screen-darkener"> </button>
+    <div class="spacer"></div>
     <div class="sidebar">
-      <div class="links">
-        <a class="link" href="index.html">
+      <div class="pages">
+        <a class="page-link" href="index.html">
           <div>
             <img src="../images/house-icon.png">
           </div>
           <label>HOME</label>
         </a>
-        <a class="link" href="archive.html">
+        <a class="page-link" href="archive.html">
           <div>
             <img src="../images/archive-icon.png">
           </div>
-          <label>ARCHIVIO</label>
+          <label>ARCHIVIO</label>          
         </a>
-        <a class="link" href="about.html">
+        <a class="page-link" href="about.html">
           <div>
             <img src="../images/redaction-icon.png">
           </div>
-          <label>REDAZIONE</label>
+          <label>REDAZIONE</label>          
         </a>
-        <a class="link" href="write.html">
+        <a class="page-link" href="write.html">
           <div>
             <img src="../images/write-icon.png">
           </div>
-          <label>SCRIVI TU</label>
+          <label>SCRIVI TU</label>          
         </a>
       </div>
     </div>
-    <div class="spacer"></div>
-    <button class="screen-darkener"></button>
 
-    <main>
-      <div class="container flex-center">
-        <div class="content">
-          <label class="title">
-            ARTICOLI
-          </label>
-          <div class="feed">
-            <div class="feed-highlights">
-              <a class="article flex-center">
-                <img class="article-img" src="../images/ARTICOLO1.png">
-                <div class="article-info">
-                  <label class="article-title">ARTICOLO 1</label>
-                  <label class="article-description">Bla bla bla bla bla bello sto articolo
-                  </label>
-                </div>
-                <div class="tablist-container">
-                  <button class="scrollbutton back" onclick="skip(-1)">
-                    <img src="../images/arrow-icon.png">
-                  </button>
-                  <div class="tablist">
-                    <div class="cursor">
-                      <div></div>
-                    </div>
-                    <div class="tab">
-                    </div>
-                    <div class="tab">
-                    </div>
-                    <div class="tab">
-                    </div>
-                    <div class="tab">
-                    </div>
-                    <div class="tab">
-                    </div>
-                    <div class="tab">
-                    </div>
-                    <div class="tab">
-                    </div>
-                    <div class="tab">
-                    </div>
-                    <div class="tab">
-                    </div>
-                    <div class="tab">
-                    </div>
-                  </div>
-                  <button class="scrollbutton skip" onclick="skip(1)">
-                    <img src="../images/arrow-icon.png">
-                  </button>
-                </div>
-              </a>
+    <main class="flex-center">
+      <div class="container">
+        <label class="title">ARTICOLI IN EVIDENZA</label>
+        <a class="see-more" href="archive.html">
+          <label>Vedi tutti gli articoli</label>
+          <label class="see-more-arrow"> &#8594;</label>
+        </a>
+        <div class="feed">
+          <div class="highlights">
+            <div class="article">
+              <img>
+              <div class="article-info">
+                <label class="article-data"></label>
+                <label class="article-title"></label>
+                <label class="article-description"></label>
+              </div>
             </div>
-            <div class="feed-related">
-              <a class="article flex-center">
-                <img class="article-img" src="../images/ARTICOLO2.png">
-                <div class="article-info">
-                  <label class="article-title">.........</label>
-                  <label class="article-description">Bla bla bla bla bla bello sto articolo
-                  </label>
-                </div>
-              </a>
-              <a class="article flex-center">
-                <img class="article-img" src="../images/ARTICOLO3.png">
-                <div class="article-info">
-                  <label class="article-title">.........</label>
-                  <label class="article-description">Bla bla bla bla bla bello sto articolo che parla di un sacco di cose inuutili e bla bla bla bla bla
-                  </label>
-                </div>
-              </a>
+            <div class="scroll-tabs">
+              <button class="tab-back">
+                <img src="../images/arrow-icon.png">
+              </button>
+              <div class="tablist">
+                <div class="cursor"><div></div></div>
+                <button class="tab" id="0"></button>
+                <button class="tab" id="1"></button>
+                <button class="tab" id="2"></button>
+                <button class="tab" id="3"></button>
+                <button class="tab" id="4"></button>
+                <button class="tab" id="5"></button>
+                <button class="tab" id="6"></button>
+                <button class="tab" id="7"></button>
+                <button class="tab" id="8"></button>
+                <button class="tab" id="9"></button>
+              </div>
+              <button class="tab-forward">
+                <img src="../images/arrow-icon.png">
+              </button>
+            </div>
+          </div>
+          <div class="related">
+             <label class="related-title">ARTICOLI RANDOM</label>
+             <div class="article">
+              <img src="../images/ARTICOLO1.png">
+              <div class="article-info">
+                <label class="article-data">
+                  Samuele Colautti 1F &#183; 3d
+                </label>
+                <label class="article-title">
+                  DDI: PERCHÉ NO?
+                </label>
+                <label class="article-description">
+                  Appunto, perché? La DDI (Didattica Digitale Integrata) è stata un’ottima soluzione nei tempi più critici della pandemia da COVID-19: ha infatti permesso a studenti e alunni di proseguire le lezioni anche quando non sembrava più possibile, permettendo al sistema scolastico italiano di subire meno danni possibile
+                </label>
+              </div>
+            </div>
+            <div class="article">
+              <img src="../images/ARTICOLO2.png">
+              <div class="article-info">
+                <label class="article-data">
+                  Redazione 2023 &#183; 2g
+                </label>
+                <label class="article-title">
+                  LA PRESIDE SI RACCONTA
+                </label>
+                <label class="article-description">
+                  Vi siete mai chiesti cosa si nasconda dietro al ruolo di Dirigente scolastica? Beh noi della classe 1^F si! Per questo abbiamo chiesto alla dottoressa Carla Bianchi se fosse disponibile a rispondere alle nostre domande.
+                </label>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <footer>
-      
-    </footer>
+
+
     <script src="../scripts/header.js"></script>
     <script src="../scripts/highlights.js"></script>
   </body>

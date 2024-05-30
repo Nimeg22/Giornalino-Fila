@@ -1,0 +1,4 @@
+Questo è il prototipo del giornalino. 
+Mancano ancora molte cose (barra di ricerca funzionante, filtri, possibilità di far caricare articoli a persone esterne…) e l'unica modalità di visualizzazione supportata al 100% è quella a schermo intero da pc.
+Il database caricato si chiama tuttofiladb. Tutti i file php fanno riferimento a questo tramite uno user TuttoFilaAdmin, su localhost e con pw: tuttofila@GESTIONE
+Scaricare tutte le cartelle (eccetto database, che va importato in xampp) all'interno di una cartella "giornalino", dentro "htdocs" di xampp, in modo che il file index.php abbia url: "http://localhost/giornalino/html/index.html"

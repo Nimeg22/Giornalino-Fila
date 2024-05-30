@@ -1,0 +1,45 @@
+* {
+  max-width: 100%;
+}
+
+.content-input {
+  height: 500px;
+  width: 500px;
+}
+
+.paragraph-div {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.paragraph {
+  opacity: 0;
+  flex: 1;
+  height: 0;
+  overflow: hidden;
+}
+
+form {
+  box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+form * {
+  width: 100%;
+}
+
+input[type=checkbox] {
+  display: inline-block;
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.labels {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 3;
+}

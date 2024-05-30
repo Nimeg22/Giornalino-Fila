@@ -1,0 +1,159 @@
+html {
+  background-image: none;
+}
+
+main {
+  max-height: none;
+  height: auto;
+  margin-right: 35vw;
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 40px;
+  transition: margin-right 0.5s;
+}
+
+main.sidebar-visible {
+  transition: margin-right 0.5s;
+  margin-right: 28vw;
+}
+
+.reactions {
+  position: fixed;
+}
+
+.article-container {
+  width: 46vw;
+}
+
+.article-container * {
+  width: 100%;
+  height: auto;
+}
+
+.article-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.article-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.article-data {
+  color: darkgray;
+  padding-left: 5px;
+  margin-bottom: 30px;
+}
+
+.article-description {
+  font-size: 1.2rem;
+  color: #707070;
+}
+
+.article-body img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.article-body p {
+  text-align: justify;
+  line-height: 1.4rem;
+  margin-bottom: 30px;
+}
+
+.related-articles {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  position: fixed;
+  top: 115px;
+  bottom: 15px;
+  right: 0;
+  width: 28vw;
+  border-left: solid darkgray 1px;
+  gap: 30px;
+  padding: 15px 30px;
+}
+
+.related-article {
+  cursor: pointer;
+  position: relative;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.related-article * {
+  transition: opacity 0.5s;
+}
+
+.related-article img {
+  border-radius: 20px;
+  width: 100%;
+  max-inline-size: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.related-article:hover img {
+  transform: scale(1.2);
+}
+
+.related-article:hover .article-description {
+  height: 4.7rem;
+  -webkit-line-clamp: 4;
+}
+
+.related-article-info {
+  background: linear-gradient(0deg, rgba(45, 45, 45, 0.9) 0%, rgba(26, 26, 26, 0.8) 34%, rgba(27, 27, 27, 0.38) 83%, transparent 100%);
+  cursor: pointer;
+  position: absolute;
+  height: fit-content;
+  width: 100%;
+  bottom: 0;
+  padding: 1.3rem 1.2rem 2rem 1.2rem;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  color: white;
+}
+
+.related-article-info * {
+  width: 100%;
+}
+
+.related-article-data {
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.related-article-title {
+  cursor: pointer;
+  font-size: 1.3rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.related-article-description {
+  cursor: pointer;
+  text-align: justify;
+  height: 2.3rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  transition: height 0.5s, opacity 0.5s;
+}
